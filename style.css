@@ -1,3 +1,24 @@
+b {
+	display: inline;
+	position: relative;
+	left: 370px;
+	bottom: 67px;
+	font-size: 17px;
+	color: white;
+	padding-left: 1em;
+}
+
+input {
+	display: block;
+	position: relative;
+	bottom:90px;
+	left: 1000px;
+}
+
+p {
+	margin-left: 20px;
+}
+
 .menuDiv {
 	background-color: blue;
 	padding-left: 20px; 
@@ -28,32 +49,10 @@
 	max-height: 30px;
 }
 
-
-b {
-	display: inline;
-	position: relative;
-	left: 370px;
-	bottom: 67px;
-	font-size: 17px;
-	color: white;
-	padding-left: 1em;
-}
-
 #logo {
 	display: block;
 	position: relative;
 	max-height: 70px;
 	left: 70px;
 	bottom: 25px;
-}
-
-input {
-	display: block;
-	position: relative;
-	bottom:90px;
-	left: 1000px;
-}
-
-p {
-	margin-left: 20px;
 }
