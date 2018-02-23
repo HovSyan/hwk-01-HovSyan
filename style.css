@@ -1,58 +1,91 @@
-b {
-	display: inline;
-	position: relative;
-	left: 370px;
-	bottom: 67px;
-	font-size: 17px;
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	margin: 0;
+}
+
+.menu_text {
+	font-style: normal;
+	text-decoration: none;
+	font-size: 16px;
 	color: white;
-	padding-left: 1em;
+	margin: 1em;
 }
 
-input {
-	display: block;
-	position: relative;
-	bottom:90px;
-	left: 1000px;
-}
-
-p {
-	margin-left: 20px;
-}
-
-.menuDiv {
+.menu_bar {
+	display: inline-block;
+	vertical-align: middle;
+	height: 100px;
+	width: 100%;
 	background-color: blue;
-	padding-left: 20px; 
-	height: 80px;
+} 
+
+.menu_icon {
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: middle;
+	height: 100%;
+	width: 100px;
 }
 
-.submenuDiv {
-	background-color: yellow;
+.menu_icon:hover {
+	background-color: grey;
+}
+
+.menu_icon_image {
+	width: 30px;
+	height: 30px;
+	margin: auto;
+	margin-top: 33.3px;
+	margin-bottom: 33.3px;
+	margin-right: 33.3px;
+	margin-left: 33.3px;
+}
+
+.logo_icon {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.main_menu {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.search_bar {
+	display: inline-block;
+	margin-left: 100px;
+	margin-right: 20px;
+	height: 100%;
+}
+
+.input {
+	border-radius: 25px;
+	height: 25%;
+}
+
+.opened_side_menu {
+	display: inline-block;
 	width: 20%;
-	float: left;
-	height: 1000px;
-	min-width: 260px;
+	height: 100%;
+	background-color: yellow;
 }
 
-.mainContentDiv {
-	background-color: red;
-	position: relative;
-	margin-left: 20%;
+.main_content {
+	display: inline-block;
 	width: 80%;
-	height: 1000px;
+	height: 100%;
+	background-color: orange;
 }
 
-#menuIcon {
-	display: block;
-	position: relative;
-	top: 25px;
-	max-width: 30px;
-	max-height: 30px;
-}
-
-#logo {
-	display: block;
-	position: relative;
-	max-height: 70px;
-	left: 70px;
-	bottom: 25px;
+@media screen and (max-width: 1024px) {
+	.opened_side_menu {
+		width: 0%;
+	}
+	.main_content {
+		width: 100%;
+	}
 }
